@@ -177,7 +177,7 @@ enum class Bit {
 }
 
 val numericValue = when (getRandomBit()) {
-  // No else branch is needed because all cases are covered
+    // No else branch is needed because all cases are covered
     Bit.ZERO -> 0
     Bit.ONE -> 1
 }
@@ -187,7 +187,7 @@ If your `when` expression **doesn't** have a subject, you **must** have an `else
 The `else` branch is evaluated when none of the other branch conditions are satisfied:
 
 ```kotlin
-when {
+val message = when {
     a > b -> "a is greater than b"
     a < b -> "a is less than b"
     else -> "a is equal to b"
@@ -281,9 +281,9 @@ sealed interface Animal {
 
 fun feedAnimal(animal: Animal) {
     when (animal) {
-        // Branch with only primary condition. Calls `feedDog()` when `Animal` is `Dog`
+        // Branch with only primary condition. Calls `feedDog()` when `animal` is `Dog`
         is Animal.Dog -> feedDog()
-        // Branch with both primary and guard conditions. Calls `feedCat()` when `Animal` is `Cat` and is not `mouseHunter`
+        // Branch with both primary and guard conditions. Calls `feedCat()` when `animal` is `Cat` and not `mouseHunter`
         is Animal.Cat if !animal.mouseHunter -> feedCat()
         // Prints "Unknown animal" if none of the above conditions match
         else -> println("Unknown animal")

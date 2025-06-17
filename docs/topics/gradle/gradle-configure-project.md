@@ -65,7 +65,7 @@ In the following table, there are the minimum and maximum **fully supported** ve
 > *Kotlin 2.0.20–2.0.21 and Kotlin 2.1.0–2.1.10 are fully compatible with Gradle up to 8.6.
 > Gradle versions 8.7–8.10 are also supported, with only one exception: If you use the Kotlin Multiplatform Gradle plugin,
 > you may see deprecation warnings in your multiplatform projects calling the `withJava()` function in the JVM target.
-> For more information, see [Java source sets created by default](multiplatform-compatibility-guide.md#java-source-sets-created-by-default).
+> For more information, see [Java source sets created by default](https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-compatibility-guide.html#java-source-sets-created-by-default).
 >
 {style="warning"}
 
@@ -185,7 +185,7 @@ in the `java` extension or task cause JVM target incompatibility. For example:
 the `compileKotlin` task has `jvmTarget=1.8`, and
 the `compileJava` task has (or [inherits](https://docs.gradle.org/current/userguide/java_plugin.html#sec:java-extension)) `targetCompatibility=15`.
 
-Configure the behavior of this check for the whole project by setting the `kotlin.jvm.target.validation.mode` property in the `build.gradle(.kts)`
+Configure the behavior of this check for the whole project by setting the `kotlin.jvm.target.validation.mode` property in the `gradle.properties`
 file to:
 
 * `error` – the plugin fails the build; the default value for projects on Gradle 8.0+.
@@ -599,7 +599,7 @@ tasks.jar(type: Jar) {
 
 ## Targeting multiple platforms
 
-Projects targeting [multiple platforms](multiplatform-dsl-reference.md#targets), called [multiplatform projects](multiplatform-intro.md),
+Projects targeting [multiple platforms](https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-dsl-reference.html#targets), called [multiplatform projects](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
 require the `kotlin-multiplatform` plugin.
 
 >The `kotlin-multiplatform` plugin works with Gradle %minGradleVersion% or later.
@@ -627,7 +627,7 @@ plugins {
 </tab>
 </tabs>
 
-Learn more about [Kotlin Multiplatform for different platforms](multiplatform-intro.md) and 
+Learn more about [Kotlin Multiplatform for different platforms](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html) and 
 [Kotlin Multiplatform for iOS and Android](https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-getting-started.html).
 
 ## Targeting Android

@@ -326,7 +326,7 @@ You can find more information about type mapping in [Interoperability with Swift
 ## Garbage collection and reference counting
 
 Swift and Objective-C use automatic reference counting (ARC). Kotlin/Native has its own [garbage collector](native-memory-manager.md#garbage-collector),
-which is also [integrated with Objective-C/Swift ARC](native-arc-integration.md).
+which is also [integrated with Swift/Objective-C ARC](native-arc-integration.md).
 
 Unused Kotlin objects are automatically removed. You don't need to take additional steps to control the lifetime of
 Kotlin/Native instances from Swift or Objective-C.
@@ -414,7 +414,7 @@ You can find more information about type mapping in [Interoperability with Swift
 Now you can connect the generated framework to your iOS project as a dependency. There are multiple ways to set it up
 and automate the process, choose the method that suits you best:
 
-<a href="multiplatform-ios-integration-overview.md"><img src="choose-ios-integration.svg" width="700" alt="Choose iOS integration method" style="block"/></a>
+<a href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-ios-integration-overview.html"><img src="choose-ios-integration.svg" width="700" alt="Choose iOS integration method" style="block"/></a>
 
 ## What's next
 
